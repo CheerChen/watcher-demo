@@ -1,0 +1,8 @@
+version: "3"
+services:
+  watcher:
+    image: cheerchen37/watcher-demo
+    restart: unless-stopped
+    volumes:
+      - /mnt/hd1/Download:/download
+    container_name: watcher
